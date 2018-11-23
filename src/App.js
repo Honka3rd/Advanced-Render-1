@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -23,10 +22,10 @@ class App extends Component {
       {name:'Typescript',rank:15}
     ];
 
-    const lanEles = languages.map(lan => (
+    const lanEles = languages.map((lan,index) => (
       <tr>
+        <td>{index + 1}</td>
         <td>{lan.name}</td>
-        <td>{lan.rank}</td>
       </tr>
     ));
 
